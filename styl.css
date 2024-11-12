@@ -1,11 +1,21 @@
-table, th, td {
-    border: 3px solid black;
-    padding: 50;
+main {
+  text-align: center;
 }
-table {
-    width: 50%;
-  }
-  
-  th {
-    height: 50px;
-  }
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 380px;
+  margin: 30px auto;
+}
+
+.cell {
+  cursor: pointer;
+  font-size: 110px;
+  text-align: center;
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
+}
